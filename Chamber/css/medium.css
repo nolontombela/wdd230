@@ -182,9 +182,9 @@
     .maincontentbox {
       display: block;
       text-align: center;
-      line-height: 35px;
+      line-height: 300px;
       width: 100%;
-      margin: 10px 10px 10px 10px;
+      margin: 30px;
       border: 1px dashed #000;
       background-color: #eee;
       color: #444;
