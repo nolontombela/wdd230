@@ -52,46 +52,35 @@
                     </div>
                  
                   <nav>
-                      
-            <ul class="flex-nav">
-                <li><a href="#" onclick="toggleMenu()">&#9776; </a></li>
-                <li><a href="#">Home</a></li>
-                <li class="active"><a href= "#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                 <button id="menuButton"><span>&#9776;</span><span>X</span></button>   
+            <ul id="flex-nav">
+                <li> <a href="index.html" title="Chatsworth Commerce Home Page" class="active" >Home</a></li>
+                
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>   
-                    
-                 
-                </section>
-            </div>
- 
+         <p>
+             <span id="currentDate"></span>
+         </p>           
         </header>
        
+        <aside id="banner">
+            "Join Us" - - - - - &nbsp;<button id="close">&#10060;</button>
+        </aside>
+
         <main>
-            <h2></h2>
-            
-            <div class="maincontentbox">Hero with site name and call to action</div>
-
-<div class="maincontentbox">Event</div>
-  <div class="maincontentbox">Weather</div>        
-
-            <div class="maincontentbox forecast">News Release</div>
-            <div class="maincontentbox">Spotlight1</div>
-            
-
-            <div class="maincontentbox">Spotlight 2</div>
-        </main>
-        <footer>
-            <div id="footerInfo">
-                <p>&copy; Chatsworth Chamber of Commerce <span id="year"></span> | Attributions | Bonolo Ntombela </p>
-            </div>
-            <div>
-                <span id="currentDate"></span>
-            </div>
-        </footer>
-    </div>
-</body>
+            <section class="boxes">
+                <div class="hero-picture">
+                <img src="https://imgur.com/undefined.jpg" alt="Durban Beach Front" />
+                <h2 class="welcome">Welcome To Chatsworth</h2>
+                <div class="hero-button">
+                    <a href="join.html">Join the Chamber</a>
+                </div>
+                </div>
+                
+            </section>
 
 </html>
