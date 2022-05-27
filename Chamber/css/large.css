@@ -13,7 +13,7 @@
         display: none;
     }
 
-    nav ul#flexi-nav {
+    nav ul#flex-nav {
         display: flex;
         border-top: 2px solid rgba(0, 0, 0, 0.3);
         border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -27,7 +27,7 @@
         padding: .7em 1.5rem;
     }
 
-    #flexi-nav {
+    #flex-nav {
         background: none;
         border: none;
     }
