@@ -1,32 +1,30 @@
-function GetFileInfo() {
-    var message = "";
+/* Current Date Header */
+const currentDateSpan = document.querySelector("currentDate")
 
-    var month_names = ["January", "February", "March",
-        "April", "May", "June", "July", "August", "September",
-        "October", "November", "December"
-    ];
-
-    var day_names = ["Sunday", "Monday", "Tuesday", "Wednesday",
-        "Thursday", "Friday", "Saturday"
-    ];
-    // idea inspired from a stackoverflow article:
-    // https://stackoverflow.com/questions/19583312/display-day-of-the-week-with-javascript-date
-    let myDate = new Date();
-    let current_date = myDate.getDate();
-    let current_month = myDate.getMonth();
-    let current_day = myDate.getDay();
-    let current_year = myDate.getFullYear();
-    message = (day_names[current_day] + ", " + current_day + " " + month_names[current_month] + " " + current_year);
-
-    let date = new Date();
-    let currYear = document.getElementById("currentDate");
-    // message += date.getDate();
-    currYear.textContent = message;
-}
-
-function toggleMenu() {
-    document
-        .getElementsByClassName("flex-nav")[0]
-        .classList.toggle("responsive");
-
-}
+currentDateSpan.textContent = new Intl.DateTimeFormat("en-GB", {
+    dateStyle: "full",
+  }).format(now);
+  
+  /* hamburger toggle menu */
+  function toggleMenu() {
+      document.querySelector("#flexi-nav").classList.toggle("open");
+      document.querySelector("#menuButton").classList.toggle("open");
+  }
+  const x = document.querySelector("#menuButton");
+  x.onclick = toggleMenu;
+  
+  
+  /* last modified */
+  let nd = new Date();
+  
+  document.getElementById("currentYear").textContent = nd.getFullYear();
+  document.querySelector("#modDate").textContent = document.lastModified;
+  
+  /* Banner on Mondays & Tuesdays */
+  if(now.getDay() === 2) {
+      document.getElementById("banner").style.display = "block";
+  }
+  const close = document.querySelector("#close");
+  close.addEventListener("click", () => {
+      banner.style.display = "none";
+  });
