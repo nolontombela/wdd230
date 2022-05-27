@@ -20,7 +20,7 @@ currentDateSpan.textContent = new Intl.DateTimeFormat("en-GB", {
   document.getElementById("currentYear").textContent = nd.getFullYear();
   document.querySelector("#modDate").textContent = document.lastModified;
   
-  /* Banner on Mondays & Tuesdays */
+  /* Weekly Banner */
   if(now.getDay() === 2) {
       document.getElementById("banner").style.display = "block";
   }
