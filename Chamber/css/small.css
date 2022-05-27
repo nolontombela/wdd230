@@ -247,12 +247,7 @@ top: 80px;
 
 
 .join {
-    position: absolute;
-    box-shadow: none;
-    width: 100px;
-    left: 50%;
-    margin-left: -50px;
-    bottom: 50px;
+    display: none;
 }
 
 .join-button {
