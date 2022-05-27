@@ -115,7 +115,7 @@ nav ul li a:hover {
     --d: 100%;   
 }
 
-#menuButton {
+#nav Button {
     grid-column: 4/5;
     background: transparent;
     padding: 2px;
@@ -123,7 +123,7 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-#menuButton:hover {
+#nav Button:hover {
     color: white;
     background: #FFB703;
     transition: .2s;
@@ -136,12 +136,17 @@ nav ul li a:hover {
 }
 
 #flexi-nav {   
+    right: 35px;
+    top: -20px;
+    width: 20vw;
     border: 2px solid black;
     background: #FFB5A7;   
 }
 
 nav ul {display: none;}
-nav ul.open {display: block;}
+nav ul.open {display: block;
+top: 80px;
+}
 
 #menuButton span:nth-child(1) {display: block;}
 #menuButton span:nth-child(2) {display: none;}
@@ -164,16 +169,13 @@ nav ul.open {display: block;}
     padding: 10px;
 }
 
-.boxes p {
-    text-align: center;
-}
 
 /* Hero Box */
- .hero, .fun, .news, .join, .weather-icon {
+ .hero-picture, .fun, .news, .join, .weather-icon {
     position: relative;
 }
 
- .hero-picture, .fun img, .news img, .join img, .weather-icon {
+ .hero-picture img, .fun img, .news img, .join img, .weather-icon .cloud{
     object-fit: cover;
     height: 100%;
 }
@@ -185,13 +187,13 @@ nav ul.open {display: block;}
     background-color: rgba(14, 60, 178, 0.7);
     border: 1px solid black;
     border-radius: .5rem;
-    padding: 5px 10px 10px;
+    padding: 5px 12px;
     box-shadow: 0 0 15px rgb(232, 232, 232);
 }
 
 .hero-button {
-    bottom: 40px;
-    right: 45px;
+    bottom: 30px;
+    right: 30px;
 }
 
 .hero-button a, .join-button a  {
@@ -199,16 +201,19 @@ nav ul.open {display: block;}
     text-decoration: none;
 }
 
-.boxes .hero .hero-button:hover, .boxes .join .join-button:hover {
+.boxes .hero-picture .hero-button:hover, .boxes .join .join-button:hover {
     background-color: #8c181b;
 }
 
 .welcome {
-    font-size: 2rem;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
 }
  
 /* Event Box */
-h2 {
+.box-title {
     position: absolute;
     color: rgb(232, 232, 232);
     text-shadow: 2px 4px 4px black;
@@ -231,14 +236,13 @@ h2 {
  
 /* Weather Box */
 
-div .info {
+#sun img{
     position: absolute;
+    box-shadow: none;
+    width: 100px;
     left: 50%;
-    margin-left: -80px;
-    top: 60px;
-    border: 2px solid rgb(255, 255, 255);
-    background: rgba(255, 255, 255, 0.6); 
-    line-height: 1.7rem; 
+    margin-left: -50px;
+    bottom: 50px;
 }
 
 
@@ -247,10 +251,9 @@ div .info {
 }
 
 .join-button {
-    top: 50%;
-    margin-top: -20px;
-    left: 50%;
-    margin-left: -70px;
+    top: 140px;
+    right: 50px;
+    
 }
 
 /* Highlight Box */
@@ -264,8 +267,6 @@ div .info {
 
 h3 {
     text-align: center;
-    padding-bottom: 5px;
-    line-height: 1.1rem;
 }
 
 .highlight div:nth-child(3) {
@@ -278,7 +279,7 @@ h3 {
 }
 
 .highlight div {
-    background: linear-gradient(0.75turn, #f9d4d5, #faedd9, #d4fae6, #d5defb);
+    background: #FEC89A;
 }
 
 /* Footer */
@@ -290,7 +291,7 @@ footer section {
 
 #bottom-logo {
     width: 125px;  
-    margin: 10px 0 10px; 
+    margin-top: 10px; 
 }
 
 .address {
@@ -316,7 +317,7 @@ footer #lastline {
     border-top: 1px dotted black;
 }
 
-/* weekly Banner */
+/* Weekly Banner */
 #banner {
     display: none;
     text-align: center;
