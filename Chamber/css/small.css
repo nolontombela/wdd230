@@ -31,7 +31,7 @@ header {
 
 header,
 footer {
-   background: #F07167;
+   background: #9A8C98;
 }
 
 header .social {
@@ -140,7 +140,7 @@ nav ul li a:hover {
     top: -20px;
     width: 20vw;
     border: 2px solid black;
-    background: #FFB5A7;   
+    background: #9A8C98;   
 }
 
 nav ul {display: none;}
