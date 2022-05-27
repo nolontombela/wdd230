@@ -130,12 +130,12 @@ nav ul li a:hover {
     --d: 100%;
 }
 
-#flexi-nav .active {
+#flex-nav .active {
     font-weight: 800;
     color: #8c181b;
 }
 
-#flexi-nav {   
+#flex-nav {   
     right: 35px;
     top: -20px;
     width: 20vw;
@@ -279,7 +279,7 @@ h3 {
 }
 
 .highlight div {
-    background: #FEC89A;
+    background:white;
 }
 
 /* Footer */
