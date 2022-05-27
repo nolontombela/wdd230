@@ -5,36 +5,39 @@
 }
 
 body {
-    font-family: 'Catamaran', sans-serif;
-    max-width: 1700px;
-    min-width: 325px;
+    font-size: 18px;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Lato', sans-serif;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
 img { 
     width: 100%;
-    box-shadow: 3px 3px 12px rgb(54, 54, 54);
+    box-shadow: 3px 3px 12px rgb(241, 235, 235);
 }
 
 /* -------Header-------- */
 
 header {
     display: grid;
-    grid-template-columns:  85px 2.5fr 1fr 35px;
+    grid-template-columns:  75px 1fr 60px 35px;
     column-gap: 10px;
     align-items: center;
-    padding: 10px;
+    padding: 20px 20px 10px 20px;
 }
 
 header,
 footer {
-   background: linear-gradient(0.25turn, #f9d4d5, #faedd9, #d4fae6, #d5defb);
+   background: #F07167;
 }
 
 header .social {
     display: flex;
     padding-top: 10px;
-    gap: 5px;
+    gap: 8px;
 }
 
 header .social img {
@@ -45,27 +48,30 @@ header .social img {
     display: block;
     text-align: center;
     padding: 5px 0 5px;
-    background: linear-gradient(0.25turn,#028c45, #21409a);
+    background: #FEC89A;
     border: 2px solid #000000;
     color: white;
 }
 
 /* ------Main----- */
 main { 
-    background: linear-gradient(0.25turn, #8c181b, #f7a92b, #028c45, #21409a);
+    background: #F07167;
     border-top: 10px solid #ffffff;
     border-bottom: 10px solid #ffffff;
-    padding: 10px;
+    padding: 1rem;
 }
 
 h1 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
-    line-height: .5;   
+    font-family: 'Acme', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    line-height: .6;   
     text-align: left;
 }
 
-#smtitle {
+#byline {
     font-size: 13px;
 }
 
@@ -78,7 +84,7 @@ header {
 h1 {
     font-size: 25px;
 }
-#smtitle {
+#byline {
     font-size: .7rem;
 }
 }
@@ -90,6 +96,7 @@ nav {
 
 nav ul {
     list-style-type: none; 
+    position: absolute;
 }
 
 nav ul li a {
@@ -98,12 +105,13 @@ nav ul li a {
     color: #000000;
     text-align: center;
     text-decoration: none;   
-    background: linear-gradient(to bottom, #8c181b, #f7a92b, #028c45, #21409a) top / var(--d, 0);
+    background: #CBF3F0;
     transition: .2s;
 }
 
 nav ul li a:hover {
     color: white;
+    font-weight: 600;
     --d: 100%;   
 }
 
@@ -117,19 +125,19 @@ nav ul li a:hover {
 
 #menuButton:hover {
     color: white;
-    background: linear-gradient(to bottom, #8c181b, #f7a92b, #028c45, #21409a) top / var(--d, 0);
+    background: #FFB703;
     transition: .2s;
     --d: 100%;
 }
 
-#mainNav .active {
+#flexi-nav .active {
     font-weight: 800;
     color: #8c181b;
 }
 
-#mainNav {   
+#flexi-nav {   
     border: 2px solid black;
-    background: linear-gradient(0.5turn, #f9d4d5, #faedd9, #d4fae6, #d5defb);   
+    background: #FFB5A7;   
 }
 
 nav ul {display: none;}
@@ -161,16 +169,16 @@ nav ul.open {display: block;}
 }
 
 /* Hero Box */
- .hero, .event, .news, .join, .weather {
+ .hero, .fun, .news, .join, .weather-icon {
     position: relative;
 }
 
- .hero img, .event img, .news img, .join img, .weather img {
+ .hero-picture, .fun img, .news img, .join img, .weather-icon {
     object-fit: cover;
     height: 100%;
 }
 
- div .hero-cta, div .join-cta {
+ div .hero-button, div .join-button {
     position: absolute; 
     font-family: 'Barlow Condensed', sans-serif;
     Font-size: 19px;
@@ -181,17 +189,17 @@ nav ul.open {display: block;}
     box-shadow: 0 0 15px rgb(232, 232, 232);
 }
 
-.hero-cta {
+.hero-button {
     bottom: 40px;
     right: 45px;
 }
 
-.hero-cta a, .join-cta a  {
+.hero-button a, .join-button a  {
     color: white;
     text-decoration: none;
 }
 
-.boxes .hero .hero-cta:hover, .boxes .join .join-cta:hover {
+.boxes .hero .hero-button:hover, .boxes .join .join-button:hover {
     background-color: #8c181b;
 }
 
@@ -209,7 +217,7 @@ h2 {
     line-height: 1.7rem;
 }
 
-.event p, .news p, .join p {
+.fun p, .news p, .join p {
     position: absolute;
     line-height: 1;
     left: 10px;
@@ -233,51 +241,20 @@ div .info {
     line-height: 1.7rem; 
 }
 
-#w1 {
-    font-size: 32px;
-}
 
-
- /**********************************
- .wind {
-    width:150px;   
-}
-.speed-chill, .temp-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    list-style-type: none;
-    text-align: right;
-    padding-right: 20px;
-}
-.wind {
-    grid-row: 1/3;
-}
-.weather p {
-    padding-left: 10px;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-.condition {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-*********************************/
-
-/* Join Box */
 .join {
     display: none;
 }
 
-.join-cta {
+.join-button {
     top: 50%;
     margin-top: -20px;
     left: 50%;
     margin-left: -70px;
 }
 
-/* Spotlight Box */
-.spotlight {
+/* Highlight Box */
+.highlight {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -291,16 +268,16 @@ h3 {
     line-height: 1.1rem;
 }
 
-.spotlight div:nth-child(3) {
+.highlight div:nth-child(3) {
     display: none;
 }
 
-.spotlight p {
+.highlight p {
     line-height: 1.1;
     font-size: .9rem;
 }
 
-.spotlight div {
+.highlight div {
     background: linear-gradient(0.75turn, #f9d4d5, #faedd9, #d4fae6, #d5defb);
 }
 
@@ -339,11 +316,11 @@ footer #lastline {
     border-top: 1px dotted black;
 }
 
-/* Tuesday Banner */
+/* weekly Banner */
 #banner {
     display: none;
     text-align: center;
-    background: linear-gradient(0.25turn, #fe3d44, #fac97b, #33d17f, #4371fb);
+    background: #FFB5A7;
     padding: 10px;
     font-size: 1rem;
     font-weight: bold;
