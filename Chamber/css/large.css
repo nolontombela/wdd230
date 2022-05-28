@@ -16,7 +16,7 @@
     nav ul#flex-nav {
         display: flex;
         width: 510px;
-        position: centre;
+        position: unset;
     }
 
     nav ul li a {
