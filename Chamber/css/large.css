@@ -15,7 +15,8 @@
 
     nav ul#flex-nav {
         display: flex;
-        justify-content: centre;
+        width: 510px;
+        position: unset;
     }
 
     nav ul li a {
