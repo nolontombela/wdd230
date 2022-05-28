@@ -91,6 +91,7 @@ h1 {
 
 /* ------navigation bar------ */
 nav {
+    display:grid;
     grid-column: 1/5
 }
 
