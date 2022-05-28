@@ -14,7 +14,7 @@
     }
 
     nav ul#flex-nav {
-        display: flex;
+        display: relative;
         width: 510px;
         position: centre;
     }
