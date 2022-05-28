@@ -15,7 +15,7 @@
 
     nav ul#flex-nav {
         display: grid;
-        grid-column: 2/4;
+        grid-column: 1/5;
         width: 510px;
         position: unset;
     }
