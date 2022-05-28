@@ -14,9 +14,9 @@
     }
 
     nav ul#flex-nav {
-        display: relative;
-        width: 510px;
-        position: centre;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-content: centre;
     }
 
     nav ul li a {
