@@ -15,10 +15,8 @@
 
     nav ul#flex-nav {
         display: flex;
-        border-top: 2px solid rgba(0, 0, 0, 0.3);
-        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
         width: 510px;
-        position: unset;
+        position: centre;
     }
 
     nav ul li a {
